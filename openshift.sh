@@ -9,12 +9,12 @@ oc new-project innovationdemo
 
 ## Create App within project
 
-oc new-app https://github.com/chhayang/TestDocker.git --strategy=docker
+oc new-app https://github.com/chhayang/InnovationDemo.git --strategy=docker
 sleep 30s
 
 ## check build logs
 
-oc logs -f bc/testdocker &&
+oc logs -f bc/innovationdemo &&
 
 ## check build status
 
@@ -22,7 +22,7 @@ oc status
 
 ## expose service
 
-oc expose service testdocker
+oc expose service innovationdemo
 
 ## url 
 
